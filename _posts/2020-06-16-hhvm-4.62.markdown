@@ -18,6 +18,10 @@ and 4.56 LTS releases.
   could lead to resources being prematurely freed when another resource held a
   reference to them.
 - improved source locations for `inout` errors.
+- a rewrite of the bytecode emitter in Rust is now used by default; the OCaml
+  emitter can be selected with the `hhvm.enable_rust_emitter=0`. If you find a
+  bug that makes this necessary, please file an issue - the previous emitter
+  will be removed very shortly.
 
 # Breaking Changes
 
